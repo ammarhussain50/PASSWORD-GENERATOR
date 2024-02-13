@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body>
+      <div class="container">
+            <h1>password generator</h1>
+            <div class="inputbox">
+                  <input readonly type="text" id="display">
+                  <i id="copyicon" class="uil uil-copy copy-icon"></i>
+            </div>
+            <input type="range" min="6" max="30" value="8" id="range">
+            <div class="passlength">
+                  <p>password length</p>
+                  <span id="rangenumber"></span>
+            </div>
+            <div class="lowercase">
+                  <label for="lowercase">include lowercase letter(a to z)</label>
+            <input type="checkbox" name="lowercase" id="lowercase">
+            </div>
+            <div class="lowercase">
+                  <label for="uppercase">include uppercase letter(A to Z)</label>
+            <input type="checkbox" name="uppercase" id="uppercase">
+            </div>
+            <div class="lowercase">
+                  <label for="number">include numbers</label>
+            <input type="checkbox" name="number" id="number">
+            </div>
+            <div class="lowercase">
+                  <label for="symbols">include symbols</label>
+            <input type="checkbox" name="symbols" id="symbols">
+            </div>
+            <button id="btn" type="button">generate password</button>
+      </div>
+      <script  src="index.js"></script>
+</body>
+</html>
